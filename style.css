@@ -1,3 +1,40 @@
-img{
-    width: 30px;
+/* AQUI ZEREI CONF DA PAG */
+
+html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+/* HEADER */
+
+
+header{
+        display: flex;
+        background-color: #d2c2b0 ;
+        justify-content: space-between;
+        align-items: center;
+        height: 20vh;
+        padding: 0 20px;
+}
+
+header figcaption{
+    font-size: 0.5em;
+}
+
+header img{
+    width: 3em;
+    border-radius: 5px;
+}
+header a, h1{
+    color: bisque;
+}
+ 
+ header a{
+    font-size: small;
+}
+header h1{
+    text-align: center;
 }
