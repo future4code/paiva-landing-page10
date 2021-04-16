@@ -1,3 +1,145 @@
-img{
-    width: 30px;
+body {
+    height: 100vh;
+    width:100vw;
+    margin-left: 0;
+    
+}
+img {
+    width:30px;
+}
+/*padronização das imagens usadas na div depoimentos*/
+.fotos{
+    width: 15vw;
+    float: left;
+    padding-right: 1vw;
+}
+/*padronização das legendas das fotos da div depoimentos*/
+figcaption {
+    text-align:left;
+    margin-top: 0.2vh;
+    font-size: 1vw;
+}
+p {
+    font-style: roboto;
+    text-align: justify;
+    padding: 0vh 1vw;
+    font-size: 1vw;
+    color: white;
+}
+/*padronização do heading h2 'por que contratar upfour'*/
+#vantagens {
+    display: flex;
+    position: center;
+    width: 96vw;
+    justify-content:center;
+    color: rgb(156, 130, 97);
+}
+/*padronização da section (div depoimentos)*/
+.depoimentos{
+    display: grid;
+    grid-template-columns:30vw 30vw 30vw; 
+    grid-template-rows: 20vh 20vh;
+    gap:1vw 1vh;
+    height: 40vh;
+    width: 98vw;  
+    background-color: rgb(158, 145, 124);
+    justify-content:center;
+    padding: 1vh 1vw;
+}
+/*estilização das ids com caixa*/
+#bia, #mila, #leo {
+    background-color: rgb(143, 124, 97);
+}
+/*layoutagem do rodape*/
+footer {
+    display:grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    justify-content:center;
+    height: 20vh;
+    width: 100vw;
+    background-color:rgb(167, 153, 133);
+    margin-top: 4vh;
+}
+/*ajustes das imagens da div 'siga' do rodape*/
+.redes {
+    width: 20%;
+    padding-left: 10%;
+    margin-top: 1vh;
+}
+/*ajustes do mapa do rodape*/
+#map {
+   height: 10vh;
+   width:20vw;
+   margin-left: 15%
+}
+/*padronização dos headings do rodape*/
+h5 {
+    margin-top: 0.2vh;
+    text-align: center;
+}
+/*layout do form do rodape*/
+form {
+    display: grid;
+    grid-template-rows: 2vh 2vh 3fr 1fr;
+    grid-template-columns: 8vw 8vw 8vw;
+    row-gap: 0.4vh;
+}
+/*encaixe especifico do h5 da div form no grid*/
+h5 {
+    grid-column: 1 / span 3;
+}
+/*ajustes no input do rodape*/
+input {
+    width: 90%;
+    margin-right: 1vh;
+    font-size: 1.2vh;
+}
+/*estilização do botão do rodape*/    
+button {
+    width: 3vw;
+    height: 2vh;
+    font-size: 1vh;
+}
+/*layout do campo de mensagem no form do rodape*/
+#msg {
+    grid-column: 1 / span 3;
+    width: 96.5%;
+    height: 8vh;
+    margin-top: 1vh;
+}
+@media screen and (max-device-width: 800px) {
+    .depoimentos {
+        height: 32vh;
+    }
+    input {
+        font-size: 0.8vh;
+    }
+    button {
+        width: 4vw;
+        height: 2vh;
+        font-size: 0.8vh;
+    }
+}
+@media screen and (max-device-width: 420px) {
+    p {
+        font-size:1vh;
+    }
+    .depoimentos {
+        grid-template-rows: 15vh 15vh;
+        row-gap: 2vh;        
+    }
+    figcaption {
+        font-size: 2vw;
+    }
+    input {
+        font-size: 0.5vh;
+    }
+    #map {
+        height: 8vh;
+    }
+    button {
+        width: 8vw;
+        height: 2vh;
+        font-size: 0.8vh;
+    }
 }
